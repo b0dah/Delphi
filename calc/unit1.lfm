@@ -1,0 +1,242 @@
+object Form1: TForm1
+  Left = 326
+  Height = 352
+  Top = 151
+  Width = 311
+  HorzScrollBar.Page = 235
+  HorzScrollBar.Range = 235
+  VertScrollBar.Page = 337
+  VertScrollBar.Range = 337
+  ActiveControl = Button1
+  BorderStyle = bsSizeToolWin
+  Caption = 'Calcul8or'
+  ClientHeight = 352
+  ClientWidth = 311
+  OnCreate = FormCreate
+  ParentBiDiMode = False
+  LCLVersion = '2.0.0.4'
+  object Edit1: TEdit
+    Left = 16
+    Height = 48
+    Top = 8
+    Width = 275
+    AutoSize = False
+    BidiMode = bdRightToLeft
+    Font.Color = 557309
+    Font.Height = -27
+    Font.Style = [fsBold, fsItalic]
+    ParentBidiMode = False
+    OnChange = Edit1Change
+    ParentFont = False
+    TabStop = False
+    TabOrder = 19
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 49
+    Top = 232
+    Width = 51
+    Caption = '1'
+    OnClick = Click2Button
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 72
+    Height = 49
+    Top = 232
+    Width = 51
+    Caption = '2'
+    OnClick = Click2Button
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 128
+    Height = 49
+    Top = 232
+    Width = 51
+    Caption = '3'
+    OnClick = Click2Button
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 16
+    Height = 49
+    Top = 176
+    Width = 51
+    Caption = '4'
+    OnClick = Click2Button
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 72
+    Height = 49
+    Top = 176
+    Width = 51
+    Caption = '5'
+    OnClick = Click2Button
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 128
+    Height = 49
+    Top = 176
+    Width = 51
+    Caption = '6'
+    OnClick = Click2Button
+    TabOrder = 5
+  end
+  object Button7: TButton
+    Left = 16
+    Height = 49
+    Top = 120
+    Width = 51
+    Caption = '7'
+    OnClick = Click2Button
+    TabOrder = 6
+  end
+  object Button8: TButton
+    Left = 72
+    Height = 49
+    Top = 120
+    Width = 51
+    Caption = '8'
+    OnClick = Click2Button
+    TabOrder = 7
+  end
+  object Button9: TButton
+    Left = 128
+    Height = 49
+    Top = 120
+    Width = 51
+    Caption = '9'
+    OnClick = Click2Button
+    TabOrder = 8
+  end
+  object Button10: TButton
+    Left = 16
+    Height = 49
+    Top = 64
+    Width = 51
+    Caption = 'AC'
+    Color = clGray
+    OnClick = ButtonAllCleanClick
+    TabOrder = 9
+  end
+  object Button11: TButton
+    Left = 72
+    Height = 49
+    Top = 64
+    Width = 51
+    Caption = '<-'
+    Color = clGray
+    OnClick = ButtonBackSpaceClick
+    TabOrder = 10
+  end
+  object Button12: TButton
+    Left = 128
+    Height = 49
+    Top = 64
+    Width = 51
+    Caption = 'C'
+    Color = clGray
+    OnClick = Button12Click
+    TabOrder = 11
+  end
+  object Button13: TButton
+    Left = 16
+    Height = 49
+    Top = 288
+    Width = 107
+    Caption = '0'
+    OnClick = Click2Button
+    TabOrder = 12
+  end
+  object Button16: TButton
+    Left = 184
+    Height = 49
+    Top = 232
+    Width = 51
+    Caption = '+'
+    OnClick = Click2Sign
+    TabOrder = 13
+  end
+  object Button17: TButton
+    Left = 184
+    Height = 49
+    Top = 176
+    Width = 51
+    Caption = '-'
+    OnClick = Click2Sign
+    TabOrder = 14
+  end
+  object Button18: TButton
+    Left = 184
+    Height = 49
+    Top = 120
+    Width = 51
+    Caption = 'x'
+    OnClick = Click2Sign
+    TabOrder = 15
+  end
+  object Button19: TButton
+    Left = 184
+    Height = 49
+    Top = 64
+    Width = 51
+    Caption = '/'
+    OnClick = Click2Sign
+    TabOrder = 16
+  end
+  object Button20: TButton
+    Left = 240
+    Height = 104
+    Top = 232
+    Width = 51
+    Caption = '='
+    Color = clYellow
+    Font.Color = 557309
+    Font.Style = [fsBold]
+    OnClick = ButtonEqualClick
+    ParentFont = False
+    TabOrder = 17
+  end
+  object Button15: TButton
+    Left = 128
+    Height = 49
+    Top = 288
+    Width = 107
+    Caption = '.'
+    OnClick = Click2Button
+    TabOrder = 18
+  end
+  object Button14: TButton
+    Left = 240
+    Height = 49
+    Top = 64
+    Width = 51
+    Caption = '√'
+    Color = clGray
+    OnClick = Click2Radical
+    TabOrder = 20
+  end
+  object Button21: TButton
+    Left = 240
+    Height = 49
+    Top = 120
+    Width = 51
+    Caption = '²'
+    Color = clGray
+    OnClick = Click2Square
+    TabOrder = 21
+  end
+  object Button22: TButton
+    Left = 240
+    Height = 49
+    Top = 176
+    Width = 51
+    Caption = '1/x'
+    Color = clGray
+    OnClick = Click2Inverse
+    TabOrder = 22
+  end
+end
