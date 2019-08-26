@@ -14,9 +14,10 @@ object DataServer: TDataServer
     Left = 48
     Top = 40
   end
-  object IBTable1: TIBTable
+  object ibtClient: TIBTable
     BufferChunks = 1000
     CachedUpdates = False
+    TableName = 'Client'
     UniDirectional = False
     Left = 40
     Top = 120
@@ -33,60 +34,64 @@ object DataServer: TDataServer
     Left = 512
     Top = 120
   end
-  object IBTable2: TIBTable
+  object ibtProduct: TIBTable
     BufferChunks = 1000
     CachedUpdates = False
+    TableName = 'Product'
     UniDirectional = False
     Left = 136
     Top = 120
   end
-  object IBTable3: TIBTable
+  object ibtFutura: TIBTable
     BufferChunks = 1000
     CachedUpdates = False
+    TableName = 'Futura'
     UniDirectional = False
     Left = 224
     Top = 120
   end
-  object IBTable4: TIBTable
+  object ibtFuturaInfo: TIBTable
     BufferChunks = 1000
     CachedUpdates = False
+    TableName = 'FuturaInfo'
     UniDirectional = False
     Left = 320
     Top = 120
   end
-  object IBTable5: TIBTable
+  object ibtTMP: TIBTable
     BufferChunks = 1000
     CachedUpdates = False
+    TableName = 'TMP'
     UniDirectional = False
     Left = 408
     Top = 120
   end
-  object DataSetProvider1: TDataSetProvider
-    DataSet = IBTable1
+  object dspClient: TDataSetProvider
+    DataSet = ibtClient
     Left = 40
     Top = 192
   end
-  object DataSetProvider2: TDataSetProvider
-    DataSet = IBTable2
+  object dspProduct: TDataSetProvider
+    DataSet = ibtProduct
     Left = 136
     Top = 192
   end
-  object DataSetProvider3: TDataSetProvider
-    DataSet = IBTable3
+  object dspFutura: TDataSetProvider
+    DataSet = ibtFutura
     Left = 224
     Top = 192
   end
-  object DataSetProvider4: TDataSetProvider
-    DataSet = IBTable4
+  object dspFuturaInfo: TDataSetProvider
+    DataSet = ibtFuturaInfo
     Left = 320
     Top = 192
   end
-  object DataSetProvider5: TDataSetProvider
-    DataSet = IBTable5
+  object dspTMP: TDataSetProvider
+    DataSet = ibtTMP
     Left = 408
     Top = 192
   end
-  object DataSetProvider6: TDataSetProvider
+  object dspQuery: TDataSetProvider
     DataSet = IBQuery1
     Left = 512
     Top = 192

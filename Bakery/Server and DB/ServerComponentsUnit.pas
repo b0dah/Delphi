@@ -12,19 +12,19 @@ uses
 type
   TDataServer = class(TRemoteDataModule, IDataServer)
     IBDatabase1: TIBDatabase;
-    IBTable1: TIBTable;
+    ibtClient: TIBTable;
     IBTransaction1: TIBTransaction;
     IBQuery1: TIBQuery;
-    IBTable2: TIBTable;
-    IBTable3: TIBTable;
-    IBTable4: TIBTable;
-    IBTable5: TIBTable;
-    DataSetProvider1: TDataSetProvider;
-    DataSetProvider2: TDataSetProvider;
-    DataSetProvider3: TDataSetProvider;
-    DataSetProvider4: TDataSetProvider;
-    DataSetProvider5: TDataSetProvider;
-    DataSetProvider6: TDataSetProvider;
+    ibtProduct: TIBTable;
+    ibtFutura: TIBTable;
+    ibtFuturaInfo: TIBTable;
+    ibtTMP: TIBTable;
+    dspClient: TDataSetProvider;
+    dspProduct: TDataSetProvider;
+    dspFutura: TDataSetProvider;
+    dspFuturaInfo: TDataSetProvider;
+    dspTMP: TDataSetProvider;
+    dspQuery: TDataSetProvider;
   private
     { Private declarations }
   protected
