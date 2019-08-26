@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/08/25 01:39:30.000.864,=C:\Users\bodah\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/08/25 01:40:14.000.006,C:\Users\bodah\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\delphi\AppServerUnit.dfm</Transaction>
+    <Transaction>2019/08/25 01:40:14.000.006,C:\Users\bodah\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\delphi\AppServerUnit.pas</Transaction>
+    <Transaction>2019/08/25 01:40:25.000.366,C:\Users\bodah\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\delphi\AppServer.dproj</Transaction>
+    <Transaction>2019/08/25 01:49:38.000.680,=C:\delphi\AppServer_TLB.pas</Transaction>
+    <Transaction>2019/08/25 01:49:38.000.778,=C:\delphi\Unit1.pas</Transaction>
+    <Transaction>2019/08/25 01:49:38.000.674,=C:\delphi\AppServer.ridl</Transaction>
+    <Transaction>2019/08/25 03:53:55.000.326,C:\delphi\Unit1.dfm=C:\delphi\ServerComponentsUnit.dfm</Transaction>
+    <Transaction>2019/08/25 03:53:55.000.326,C:\delphi\Unit1.pas=C:\delphi\ServerComponentsUnit.pas</Transaction>
+  </Transactions>
+</BorlandProject>
