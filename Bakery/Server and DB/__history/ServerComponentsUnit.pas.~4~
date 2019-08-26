@@ -7,7 +7,7 @@ interface
 uses
   Windows, Messages, SysUtils, Classes, ComServ, ComObj, VCLCom, DataBkr,
   DBClient, AppServer_TLB, StdVcl, Datasnap.Provider, IBX.IBQuery,
-  IBX.IBDatabase, Data.DB, IBX.IBCustomDataSet, IBX.IBTable, IBX.IBStoredProc;
+  IBX.IBDatabase, Data.DB, IBX.IBCustomDataSet, IBX.IBTable;
 
 type
   TDataServer = class(TRemoteDataModule, IDataServer)
@@ -25,14 +25,6 @@ type
     dspFuturaInfo: TDataSetProvider;
     dspTMP: TDataSetProvider;
     dspQuery: TDataSetProvider;
-    ibspUpdateClient: TIBStoredProc;
-    ibspDeleteClient: TIBStoredProc;
-    ibspUpdateProduct: TIBStoredProc;
-    ibspDeleteProduct: TIBStoredProc;
-    ibspUpdateFutura: TIBStoredProc;
-    ibspDeleteFutura: TIBStoredProc;
-    ibspUpdateFuturaInfo: TIBStoredProc;
-    ibspDeleteFuturaInfo: TIBStoredProc;
   private
     { Private declarations }
   protected
@@ -64,19 +56,6 @@ end;
 {*}procedure TDataServer.smUpdateClient(ID: Integer; const Name, Adress: WideString);
 
 begin
-    if ibspUpdateClient.Transaction.InTransaction then
-      ibspUpdateClient.Transaction.Commit;
-
-    ibspUpdateClient.Params[0].value := ID;
-
-    ibspUpdateClient.Params[1].value := Name;
-
-    ibspUpdateClient.Params[2].value := Adress;
-
-    ibspUpdateClient.ExecProc;
-
-    if ibspUpdateClient.Transaction.InTransaction then
-       ibspUpdateClient.Transaction.Commit;
 
 end;
 
